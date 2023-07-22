@@ -9,7 +9,6 @@ apt-get -y install \
     vim \
     htop \
     git \
-    python3-pip \
     build-essential
 
 # Add line to config.txt
