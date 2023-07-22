@@ -13,6 +13,9 @@ EOF
 # Run update here so we know if this PPA works
 apt-get -y update
 
+# venv versions have the ensurepip library
 apt-get -y install python3.10-venv
-ln -sf /usr/bin/python3.10 /usr/bin/python3
+# setup pip using python 3.10
 python3.10 -m ensurepip --default-pip
+# make this the default python
+ln -sf /usr/bin/python3.10 /usr/bin/python3
